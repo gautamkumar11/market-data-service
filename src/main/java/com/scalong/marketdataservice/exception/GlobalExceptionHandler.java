@@ -22,7 +22,6 @@ public class GlobalExceptionHandler {
         );
     }
 
-
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public Map<String, String> handleValidationException(
