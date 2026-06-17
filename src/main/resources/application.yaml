@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: marketdataservice
+
+  spring:
+    cloud:
+      openfeign:
+        client:
+          config:
+            okxClient:
+              connectTimeout: 10000
+              readTimeout: 10000
+
+okx:
+  base-url: https://app.okx.com
